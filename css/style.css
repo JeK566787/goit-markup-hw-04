@@ -4,6 +4,15 @@
 .section {
   padding: 94px 0;
 }
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 /* ------------------------------header------------------------------------- */
 .header {
   border-bottom: 1px solid #ececec;
@@ -107,6 +116,16 @@
 /* ------------------------------------------advantages---------------------------------------- */
 .advantages-items {
   display: flex;
+}
+.advantages-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: var(--secondary-bk-color);
+  margin-bottom: 30px;
 }
 .advantages-item {
   width: 270px;
