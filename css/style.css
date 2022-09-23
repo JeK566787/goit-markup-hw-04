@@ -214,6 +214,9 @@
   border-radius: 50%;
   align-items: center;
 }
+.team-media-bk + .team-media-bk {
+  margin-left: 10px;
+}
 .team-media-bk:hover,
 .team-media-bk:hover .icon-media {
   fill: var(--bk-white-color);
@@ -274,6 +277,39 @@
 .footer-item:nth-child(2) {
   margin-left: 94px;
 }
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--bk-white-color);
+
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+/* ------------------------------------------------------- */
+.foot-media-bk,
+.foot-icon-media {
+  fill: var(--bk-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.foot-media-bk:hover,
+.foot-media-bk:hover .foot-icon-media {
+  fill: var(--bk-white-color);
+  background-color: var(--accent-color);
+}
+.foot-media-bk {
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+}
+.foot-media-bk + .foot-media-bk {
+  margin-left: 10px;
+}
+/* -------------------------------------------------------- */
 .footer-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -353,6 +389,11 @@
 
   margin-right: 30px;
   margin-bottom: 30px;
+}
+.portfolio-card:hover,
+.portfolio-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-card:nth-child(3n) {
   /* убирает у каждого третьего элемента правый марджин */
