@@ -1,6 +1,9 @@
 .section {
   padding: 94px 0;
 }
+.occupations.section {
+  padding-top: 0;
+}
 /* ------------------------------header------------------------------------- */
 .header {
   border-bottom: 1px solid #ececec;
@@ -52,6 +55,7 @@
 
   color: var(--primary-text-color);
   display: flex;
+  align-items: center;
 }
 .head-adr-link:hover,
 .head-adr-link:focus {
@@ -119,13 +123,14 @@
 }
 .advantages-item-area {
   background-color: var(--secondary-bk-color);
-  padding: 25px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
   margin-bottom: 30px;
 }
-.icon-test {
-  display: block;
-  margin: 0 auto;
-}
+
 /* .advantages-item::before {
   display: block;
   content: '';
@@ -271,6 +276,7 @@
 }
 .footer-body {
   display: flex;
+  align-items: baseline;
 }
 .footer-item:nth-child(2) {
   margin-left: 94px;
@@ -282,14 +288,14 @@
   text-transform: uppercase;
   color: var(--bk-white-color);
 
-  margin-top: 15px;
   margin-bottom: 20px;
 }
 /* ------------------------------------------------------- */
-.foot-media-bk,
+.foot-media-bk {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 .foot-icon-media {
   fill: var(--bk-white-color);
-  background-color: rgba(255, 255, 255, 0.1);
 }
 .foot-media-bk:hover,
 .foot-media-bk:hover .foot-icon-media,
@@ -390,10 +396,13 @@
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.portfolio-card:hover,
-.portfolio-card:focus {
+.port-card-link:hover,
+.port-card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.port-card-link {
+  display: block;
 }
 .portfolio-card:nth-child(3n) {
   /* убирает у каждого третьего элемента правый марджин */
